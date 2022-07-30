@@ -14,7 +14,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
-    transition: 0.1s all ease;
+    transition: 0.2s all ease;
     font-family: 'Raleway';
     outline: none;
 }
@@ -161,15 +161,17 @@ html {
     font-weight: 600;
   }
 
-  .title a{
+  .link li a{
     font-size: 18px;
     color: white;
     border-radius: 5px;
     background: rgb(56, 51, 51);
     padding: 9px 40px;
+    position: relative;
+    top: 12px;
   }
 
-  .title a:hover {
+  .link li a:hover {
     text-decoration: none;
   }
 
@@ -217,7 +219,6 @@ html {
   margin: 0 auto;
   padding: 4rem;
   width: 80rem;
-  /* font-size: 50rem; */
 }
 
 .container-faq h2{
@@ -234,7 +235,7 @@ html {
 }
 
 .accordion .accordion-item button[aria-expanded='true'] {
-  border-bottom: 1px solid #03b5d2;
+  border-bottom: 1px solid #4d4e4e;
 }
 
 .accordion button {
@@ -243,7 +244,7 @@ html {
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #7288a2;
+  color: #000000;
   font-size: 1.69rem;
   font-weight: 400;
   border: none;
@@ -254,14 +255,14 @@ html {
 .accordion button:hover,
 .accordion button:focus {
   cursor: pointer;
-  color: #03b5d2;
+  color: #666565;
 }
 
 .accordion button:hover::after,
 .accordion button:focus::after {
   cursor: pointer;
-  color: #03b5d2;
-  border: 1px solid #03b5d2;
+  color: #414242;
+  border: 1px solid #3d3d3d;
 }
 
 .accordion button .accordion-title {
@@ -301,7 +302,7 @@ html {
 }
 
 .accordion button[aria-expanded='true'] {
-  color: #308592;
+  color: #000000;
 }
 .accordion button[aria-expanded='true'] .icon::after {
   width: 0;
@@ -309,14 +310,12 @@ html {
 .accordion button[aria-expanded='true'] + .accordion-content {
   opacity: 1;
   max-height: 9em;
-  transition: all 200ms linear;
-  will-change: opacity, max-height;
 }
 .accordion .accordion-content {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 200ms linear, max-height 200ms linear;
+  transition: opacity 100ms linear, max-height 175ms linear;
   will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
@@ -326,6 +325,13 @@ html {
 }
 
 /* Contact */
+
+.container h2{
+  font-size: 4rem !important;
+  font-weight: 600;
+  position: relative;
+  top: -10px;
+}
 
 .container {
   position: relative;
@@ -337,7 +343,6 @@ html {
 
 .contact-box {
   font-family: 'Raleway';
-  /* max-width: 900px; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -349,7 +354,7 @@ html {
 }
 
 .left {
-  background: url("img/test.webp") no-repeat center;
+  background: url("img/unknown.png") no-repeat center;
   background-size: cover;
   height: 100%;
   cursor: default;
@@ -416,13 +421,88 @@ input {
   background-color: #fff;
 }
 
-.woo_newbugfix{
-  text-align: center;
-  font-size: 4rem;
+/* footer */
+.container2{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+  justify-content: center;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ffffff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
 
-.woo_newbugfix::before{
-  display: none;
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
 
 
@@ -438,4 +518,7 @@ input {
 
   .mar{
     margin: 50px;
+  }
+  .mar2{
+    margin: 200px;
   }
