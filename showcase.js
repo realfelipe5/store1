@@ -76,7 +76,7 @@ function changeImage8() {
         image.style.setProperty("height", "320px", "important");
     }
     else {
-        image.src = "img/display3.webp";
+        image.src = "img/display8.webp";
     }
 }
 function changeImage9() {
