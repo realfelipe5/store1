@@ -572,12 +572,6 @@ ul{
   }
 
   @media screen and (max-width: 880px) {
-    .container {
-      width: 100%;
-      padding-left: 40px;
-      position: relative;
-      left: 70px;
-    }
     .contact-box {
       grid-template-columns: 1fr;
     }
@@ -666,8 +660,7 @@ ul{
         width: 100%;
       }
       nav{
-        position: fixed;
-width: 100%;
+        margin-top: -2600px !important;
 
       }
       .head {
@@ -676,7 +669,7 @@ width: 100%;
         display: flex;
         justify-content: center;
         align-items: center; */
-        width: 300% !important;
+        width: 300%  !important;
       }
       .head::after{
         width: 300% !important;
@@ -687,10 +680,12 @@ width: 100%;
       }
       .about {
         width: 100% !important;
+        position: relative;
+        left: 90px; 
 
       }
       .about p{
-        width: 300px !important;
+        width: 400px !important;
       }
       footer {
         display: none;
@@ -714,29 +709,23 @@ width: 100%;
         width: 100%;
         padding-left: 380px !important;
       }
-      .about #about-info {
-        width: 100%;
-      }
       .about img {
         display: none;
         opacity: 0;
         visibility: hidden;
       }
-      .about .about-info p {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 0px;
-      }
-      .about h1 {
-        margin: 0 auto;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-      }
-      }
 
+      .container-faq{
+        position: relative !important;
+        left: 90px !important; 
+      }
+      .container .contact-box{
+        position: relative !important;
+        left: 150px !important; 
+        width: 500px !important;
+      }
+    }
+  
  
 
 
