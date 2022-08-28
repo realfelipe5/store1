@@ -673,12 +673,14 @@ font-size: 2rem;
 
   .about{
     zoom: 200%;
-    position: relative;
-    right: -160px;
+    position: relative !important;
+    right: -340px !important;
   }
 
   .container-faq{
-    zoom: 100%;
+    zoom: 200%;
+    position: relative !important;
+    right: -50px !important;
   }
      .grid {
          grid-template-columns: 1fr;
@@ -690,11 +692,8 @@ font-size: 2rem;
          background: none;
     }
 }
- @media(max-width: 1366px) {
-     footer{
-    }
-}
- /* @media(max-width: 600px) {
+
+ @media(max-width: 600px) {
      html, body {
          display: flex;
          flex-direction: column;
@@ -704,34 +703,8 @@ font-size: 2rem;
          margin: auto;
          width: 100%;
     }
-     nav{
-         margin-top: -2600px !important;
-    }
-     .head {
-         width: 300% !important;
-    }
-     .head::after{
-         width: 300% !important;
-    }
-     .head .link {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-    }
-    .head .link li a{
-      font-size: 3rem;
-    }
-    .head .h1-title{
-      font-size: 6rem;
-    }
-    .about h1{
-      width: 300%;
-      font-size: 8rem !important;
-    }
-     .about .about-text p{
-      width: 300%;
-         font-size: 2.5rem !important;
-    }
+
+
      footer {
          display: none;
          opacity: 0;
@@ -744,26 +717,23 @@ font-size: 2rem;
          text-align: center;
          padding-left: 40px;
     }
-     .about {
-         display: flex;
-         text-align: center;
-         justify-content: center;
-         align-items: center;
-         margin: 0 auto;
-         width: 100%;
-         padding-left: 380px !important;
-    }
+
      .about img {
          display: none;
          opacity: 0;
          visibility: hidden;
     }
 
-    .about a{
-      zoom: 300%;
+    .about{
       position: relative;
-      top: 10px;
-      right: -120px;
+      left: 240px;
+    }
+
+    .about a{
+      zoom: 100%;
+      position: relative;
+      /* top: 10px; */
+      right: -20px;
     }
      .container-faq{
          position: relative !important;
@@ -775,11 +745,12 @@ font-size: 2rem;
     }
      .container-contact .contact-box{
          position: relative !important;
-         left: 400px !important;
+         left: -200px !important;
          width: 500px !important;
-         transform: scale(1.671);
+         transform: scale(0.9);
+         margin-top: 230px;
     }
-} */
+}
 /* others*/
 .mar-small{
   margin: 20px;
