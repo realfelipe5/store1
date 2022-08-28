@@ -28,6 +28,7 @@
      justify-content: space-around;
      align-items: center;
      min-height: 9.55vh;
+     backdrop-filter: blur(2px);
      font-family: "Poppins", sans-serif;
      z-index: 9999;
 }
@@ -82,7 +83,6 @@
      color: black;
 }
  .sch {
-     background-color: rgba(218, 213, 213, 0.13);
 }
  .sch li a:hover {
      text-decoration: none;
