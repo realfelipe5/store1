@@ -526,6 +526,7 @@ font-size: 2rem;
   line-height: 35px;
   margin-right: 3px;
   margin-bottom: 5px;
+  transition: all 0.2s;
 }
 
 .footer .footer-icons a:hover {
@@ -642,8 +643,43 @@ font-size: 2rem;
          color: white !important;
          font-size: 27px;
     }
+
+
+      .head{
+        width: 300% !important;
+      }
+
+      .head::after{
+        width: 300% !important;
+      }
+
+    .about{
+      position: relative !important;
+      right: -500px !important;
+      zoom: 200%;
+    }
+
+    .container-faq{
+      zoom: 200%;
+    }
+
+    .container-contact{
+      position: relative;
+      right: -750px;
+      transform: scale(1.651);
+    }
 }
  @media (max-width:768px) {
+
+  .about{
+    zoom: 200%;
+    position: relative;
+    right: -160px;
+  }
+
+  .container-faq{
+    zoom: 100%;
+  }
      .grid {
          grid-template-columns: 1fr;
     }
@@ -658,7 +694,7 @@ font-size: 2rem;
      footer{
     }
 }
- @media(max-width: 600px) {
+ /* @media(max-width: 600px) {
      html, body {
          display: flex;
          flex-direction: column;
@@ -672,12 +708,6 @@ font-size: 2rem;
          margin-top: -2600px !important;
     }
      .head {
-        /* padding: 0;
-         text-align: center;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         */
          width: 300% !important;
     }
      .head::after{
@@ -728,6 +758,13 @@ font-size: 2rem;
          opacity: 0;
          visibility: hidden;
     }
+
+    .about a{
+      zoom: 300%;
+      position: relative;
+      top: 10px;
+      right: -120px;
+    }
      .container-faq{
          position: relative !important;
          left: 90px !important;
@@ -736,13 +773,13 @@ font-size: 2rem;
     .container-faq .accordion-item{
       zoom: 250% !important;
     }
-     .container .contact-box{
+     .container-contact .contact-box{
          position: relative !important;
          left: 400px !important;
          width: 500px !important;
          transform: scale(1.671);
     }
-}
+} */
 /* others*/
 .mar-small{
   margin: 20px;
