@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -29,6 +29,7 @@
   </head>
   <!-- oncontextmenu="return false" -->
   <body>
+    <div class="container">
     <a name="home"></a>
     <a class="skip-main" href="#main">Skip to main content</a>
     <nav data-aos="fade-down" data-aos-duration="1000">
@@ -63,8 +64,12 @@
         <div class="about-text">
           <h1 data-aos="zoom-in" data-aos-delay="200">About Us</h1>
           <p data-aos="fade-up" data-aos-duration="800">With our store located in the neighborhood, you can start and finish all of your shopping close to home so you don't have to go far. With our simple and easy checkout process and fresh merchandise arriving every day, you are sure to find something new every time you visit our store!</p>
+          <div class="mar-small"></div>
+          <div data-aos="fade-up"  data-aos-duration="500" class="about-href">
+            <a href="showcase.html">GALLERY</a>
+          </div>
         </div>
-        <img data-aos="zoom-in" data-aos-duration="800" src="img/about_test.webp"> 
+        <img data-aos="zoom-in" data-aos-duration="800" src="img/about.avif"> 
       </div>
     </div>
     <div class="mar"></div>
@@ -129,7 +134,7 @@
     <div class="mar2"></div>
     <section id="contact">
       <form action="">
-        <div class="container">
+        <div class="container-contact">
           <div class="contact-box">
             <div data-aos="zoom-in" class="left"> </div>
             <div class="right">
@@ -146,47 +151,55 @@
         </div>
       </form>
     </section>
-    <footer>
-      <div class="footer-inner">
-        <div class="footerInnerContainer">
-          <div class="footer-about-us">
-            <h2 data-aos="zoom-in" data-aos-duration="800" class="footer-text">About Us</h2>
-            <div class="links-para">
-              <p data-aos="zoom-out" data-aos-duration="800">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
+
+  <footer class="footer">
+      <div class="footer-left">
+          <h3>BRAND</h3>
+
+          <p class="footer-links">
+              <a href="#">HOME</a>
+              |
+              <a href="#">ABOUT</a>
+              |
+              <a href="#">FAQ</a>
+              |
+              <a href="#">CONTACT</a>
+              |
+              <a href="#">GALLERY</a>
+          </p>
+
+          <p class="footer-company-name">Copyright © 2022 <strong>BRAND</strong> All rights reserved</p>
+      </div>
+
+      <div class="footer-center">
+        <h3>BRAND</h3>  
+          <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>AGA</span> JOE</p>
           </div>
-          <div class="footer-link">
-            <h2 data-aos="zoom-in" data-aos-duration="800" class="footer-text">Links</h2>
-            <div class="links-para">
-              <ul>
-                <li data-aos="fade-up" data-aos-duration="800"><a>Link 1</a></li>
-                <li data-aos="fade-down" data-aos-duration="700"><a>Link 2</a></li>
-                <li data-aos="fade-up" data-aos-duration="800"><a>Link 3</a></li>
-                <li data-aos="fade-down" data-aos-duration="700"><a>Link 4</a></li>
-                <li data-aos="fade-up" data-aos-duration="800"><a>Link 5</a></li>
-              </ul>
-            </div>
+
+          <div>
+              <i class="fa fa-phone"></i>
+              <p>### ### ####</p>
           </div>
-          <div class="footer-link">
-            <h2 data-aos="zoom-in" data-aos-duration="800" class="footer-text">Links</h2>
-            <div class="links-para">
-              <ul>
-                <li data-aos="fade-up" data-aos-duration="800"><a>Link 1</a></li>
-                <li data-aos="fade-down" data-aos-duration="700"><a>Link 2</a></li>
-                <li data-aos="fade-up" data-aos-duration="800"><a>Link 3</a></li>
-                <li data-aos="fade-down" data-aos-duration="700"><a>Link 4</a></li>
-                <li data-aos="fade-up" data-aos-duration="800"><a>Link 5</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="mar"></div>
-        <hr>
-          <div class="Copyright">
-            <p>Copyright © 2022 All Rights Reserved by BRAND.</p>
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:krishsuisun@gmail.com">krishsuisun@gmail.com</a></p>
           </div>
       </div>
-    </footer>
+      <div class="footer-right">
+        <h3>BRAND</h3>
+          <p class="footer-company-about">
+              <strong>BRAND</strong>
+          </p>
+          <div class="footer-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+      </div>
+  </footer> 
+</div>
     <script>
       AOS.init();
     </script>

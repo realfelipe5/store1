@@ -182,9 +182,24 @@
      position: relative;
      top: -15px;
 }
+
+.about-info a {
+  color: white;
+  padding: 9px 30px;
+  background: rgb(56, 51, 51);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.about-info a:hover {
+  background-color: rgb(104, 97, 97);
+  color: white;
+}
+
  .about-info img {
-     width: 550px;
-     object-fit: scale-down;
+     width: 400px;
+     height: 400px;
      user-select: none;
      -moz-user-select: none;
      -webkit-user-drag: none;
@@ -289,13 +304,13 @@
      margin: 2em 0;
 }
 /* Contact */
- .container h2{
+ .container-contact h2{
      font-size: 3rem !important;
      font-weight: 600;
      position: relative;
      top: -8px;
 }
- .container {
+ .container-contact {
      position: relative;
      width: 100%;
      height: 100%;
@@ -371,77 +386,153 @@
      background-color: #fff;
 }
 /* footer */
- footer{
-     background-color: #1C1C1E;
+footer {
+  position: fixed;
+  bottom: 0;
 }
- .footer-inner{
-     padding: 70px 30px 30px 30px;
-     height: 100%;
+
+@media (max-height:10000px) {
+  footer {
+      position: static;
+  }
 }
- .footerInnerContainer{
-     display: flex;
-     justify-content: space-around;
+
+.footer {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
 }
- .footer-about-us{
-     width: 40%;
-     height: 100%;
-     padding: 10px;
-     font-size: 16px;
+
+.footer .footer-left, .footer .footer-center, .footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
 }
- .footer-link{
-     width: 25%;
-     padding: 10px;
+
+/* Footer left */
+
+.footer .footer-left {
+  width: 30%;
 }
- .footer-text{
-     font-size: 25px;
-     color: white;
-     padding-bottom: 10px;
+
+.footer h3 {
+  color: #ffffff;
+font-size: 2rem;
+  margin: 0;
 }
- .links-para{
-     color: #c9bebe;
+
+
+
+/* Footer links */
+
+.footer .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
 }
- .links-para ul{
-     list-style-type:none;
-     margin: 0;
-     padding: 0;
+
+.footer .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
 }
- .links-para ul li a{
-     cursor: pointer;
-     display: block;
-     transition: 0.3s;
+
+.footer .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
 }
- .links-para ul li:hover a{
-     color: white;
-     transform: translate(15px, 1px) scale(125%);
+
+/* Footer Center */
+
+.footer .footer-center {
+  width: 35%;
 }
- footer hr{
-     margin-bottom: 22px;
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
 }
- .Copyright p{
-     text-align: center;
-     font-size: 18px;
-     color: white;
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
 }
- @media screen and (max-width: 2560px) {
-     footer{
-         padding: 0px 20%;
-    }
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
 }
- @media screen and (max-width: 1440px) {
-     footer{
-         padding: 0px 10%;
-    }
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
 }
- @media screen and (max-width: 1024px) {
-     footer{
-         padding: 0px 5%;
-    }
+
+.footer .footer-center p a {
+  color: #ffffff;
+  text-decoration: none;
+  ;
 }
- @media screen and (max-width: 768px) {
-     footer{
-         padding: 0px 0px;
-    }
+
+/* Footer Right */
+
+.footer .footer-right {
+  width: 30%;
 }
+
+.footer .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+.footer .footer-icons {
+  margin-top: 25px;
+}
+
+.footer .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer .footer-icons a:hover {
+  background-color: #bbc4d8;
+}
+
+.footer-links a:hover {
+  color: #bbc4d8;
+}
+
  @media (max-width:1334px){
      .head{
          background-attachment: fixed;
