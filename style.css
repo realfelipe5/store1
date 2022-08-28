@@ -734,7 +734,6 @@ font-size: 2rem;
 
     }
     .container-faq .accordion-item{
-      
       zoom: 250% !important;
     }
      .container .contact-box{
@@ -763,6 +762,8 @@ a.skip-main {
   overflow:hidden;
   z-index:-999;
 }
+
+
 a.skip-main:focus, a.skip-main:active {
   color: #fff;
   background-color:#000;
@@ -778,6 +779,58 @@ a.skip-main:focus, a.skip-main:active {
   text-align:center;
   font-size:1.2em;
   z-index:99999;
+}
+
+
+/* scrollbar style */
+::-webkit-scrollbar{
+  width: 20px;
+}
+
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 2.5px black;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(56, 51, 51);
+  border-radius: 4px;
+}
+
+
+/*** Works on common browsers ***/
+
+::selection {
+  background: rgb(56, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+
+/*** Mozilla based browsers ***/
+
+ ::-moz-selection {
+  background: rgb(56, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+
+/***For Other Browsers ***/
+
+ ::-o-selection {
+  background: rgb(56, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+ ::-ms-selection {
+  background: rgb(56, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+
+/*** For Webkit ***/
+
+ ::-webkit-selection {
+  background: rgb(56, 51, 51);
+  color: rgb(255, 255, 255);
 }
 
 /* enable when needed */
