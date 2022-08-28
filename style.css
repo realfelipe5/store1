@@ -82,8 +82,6 @@
  .sch .nav-links li a {
      color: black;
 }
- .sch {
-}
  .sch li a:hover {
      text-decoration: none;
 }
@@ -157,6 +155,8 @@
      top: 12px;
 }
  .link li a:hover {
+     background-color: rgb(104, 97, 97);
+     color: white;
      text-decoration: none;
 }
 /* about */
@@ -169,7 +169,7 @@
      font-family: 'Raleway';
      text-align: left;
      position: relative;
-     top: -35px;
+     top: -90px;
 }
  .about-info {
      display: flex;
@@ -180,7 +180,7 @@
      font-size: 0.9rem;
      width: 500px;
      position: relative;
-     top: -15px;
+     top: -75px;
 }
 
 .about-info a {
@@ -189,6 +189,8 @@
   background: rgb(56, 51, 51);
   text-decoration: none;
   border-radius: 5px;
+  position: relative;
+  top: -65px;
 }
 
 
@@ -222,6 +224,7 @@
 }
  .accordion .accordion-item {
      border-bottom: 1px solid #e5e5e5;
+     zoom: 100%;
 }
  .accordion .accordion-item button[aria-expanded='true'] {
      border-bottom: 1px solid #4d4e4e;
@@ -776,3 +779,13 @@ a.skip-main:focus, a.skip-main:active {
   font-size:1.2em;
   z-index:99999;
 }
+
+/* enable when needed */
+
+/* .smooth-scroll-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+} */

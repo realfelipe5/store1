@@ -156,77 +156,153 @@
  ul{
      list-style: none;
 }
- footer{
-     background-color: #1C1C1E;
-}
- .footer-inner{
-     padding: 70px 30px 30px 30px;
-     height: 100%;
-}
- .footerInnerContainer{
-     display: flex;
-     justify-content: space-around;
-}
- .footer-about-us{
-     width: 40%;
-     height: 100%;
-     padding: 10px;
-     font-size: 16px;
-}
- .footer-link{
-     width: 25%;
-     padding: 10px;
-}
- .footer-text{
-     font-size: 25px;
-     color: white;
-     padding-bottom: 10px;
-}
- .links-para{
-     color: #c9bebe;
-}
- .links-para ul{
-     list-style-type:none;
-     margin: 0;
-     padding: 0;
-}
- .footer .links-para ul li{
-     padding: 0px 0px 8px 0px;
-     width: max-content;
-}
- .links-para ul li a{
-     cursor: pointer;
-     display: block;
-     transition: 0.3s;
-}
- .links-para ul li:hover a{
-     color: white;
-     transform: translate(15px, 1px) scale(125%);
-}
- footer hr{
-     margin-bottom: 22px;
-}
-.Copyright p{
-  text-align: center;
-  font-size: 18px;
-  color: white;
-}
-
- @media screen and (max-width: 2560px) {
-     footer{
-         padding: 0px 20%;
+footer {
+    position: fixed;
+    bottom: 0;
+  }
+  
+  @media (max-height:10000px) {
+    footer {
+        position: static;
     }
-}
- @media screen and (max-width: 1440px) {
-     footer{
-         padding: 0px 10%;
-    }
-}
- @media screen and (max-width: 1024px) {
-     footer{
-         padding: 0px 5%;
-    }
-}
+  }
+  
+  .footer {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+  }
+  
+  .footer .footer-left, .footer .footer-center, .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer .footer-left {
+    width: 30%;
+  }
+  
+  .footer h3 {
+    color: #ffffff;
+  font-size: 2rem;
+    margin: 0;
+  }
+  
+  
+  
+  /* Footer links */
+  
+  .footer .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+  }
+  
+  .footer .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer .footer-center {
+    width: 35%;
+  }
+  
+  .footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer .footer-center p a {
+    color: #ffffff;
+    text-decoration: none;
+    ;
+  }
+  
+  /* Footer Right */
+  
+  .footer .footer-right {
+    width: 30%;
+  }
+  
+  .footer .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  
+  .footer .footer-icons {
+    margin-top: 25px;
+  }
+  
+  .footer .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .footer .footer-icons a:hover {
+    background-color: #bbc4d8;
+  }
+  
+  .footer-links a:hover {
+    color: #bbc4d8;
+  }
+  
  @media screen and (max-width: 768px) {
      footer{
          padding: 0px 0px;
@@ -306,3 +382,14 @@
          visibility: hidden;
     }
 }
+
+
+.mar-small{
+    margin: 20px;
+  }
+   .mar{
+       margin: 50px;
+  }
+   .mar2{
+       margin: 200px;
+  }
