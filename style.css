@@ -539,7 +539,6 @@ font-size: 2rem;
 
 
 @media screen and (min-width: 1204px) and (max-width: 1287px) {
-/* header fix */
 .head{
   width: 150%;
   text-align: center !important;
@@ -679,9 +678,9 @@ nav{
 
 .about{
   zoom: 250%;
-  display: flex;
-  position: relative;
-  left: 56px;
+  display: flex !important;
+  position: relative !important;
+  left: -44px !important;
 }
 .about img{
   display: none;
@@ -690,27 +689,26 @@ nav{
 }
 
 .container-faq h2{
-  font-size: 85px;
-  position: relative;
-  top: -180px;
-  left: 300px;
-  zoom: 1.3;
+  position: relative !important;
+  top: -180px !important;
+  left: 50px !important;
+
   }
 
 .container-faq .accordion{
-  transform: scale(2.85728);
-  width: 50%;
-  position: relative;
-  left: 650px;
+  transform: scale(1.968) !important;
+  width: 40%;
+  position: relative !important;
+  left: 300px !important;
   bottom: -50px;
 }
 
 .container-contact {
-  width: 200%;
+  width: 300%  !important;
   zoom: 200%;
-  position: relative;
-  bottom: -200px;
-  left: 180px;
+  position: relative !important;
+  bottom: -200px !important;
+  left: 0px !important;
   transform: scale(1.4);
 }
 .contact-box {
