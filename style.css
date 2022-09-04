@@ -224,7 +224,10 @@
 }
  .accordion .accordion-item {
      border-bottom: 1px solid #e5e5e5;
-     zoom: 100%;
+     zoom: 89%;
+     width: 70%;
+     position: relative;
+     left: 200px;
 }
  .accordion .accordion-item button[aria-expanded='true'] {
      border-bottom: 1px solid #4d4e4e;
@@ -788,10 +791,10 @@ top: -180px;
 
 
 .container-faq .accordion{
-  transform: scale(2.43);
+  transform: scale(2.6) !important;
   width: 30%;
   position: relative;
-  left: 400px;
+  left: 100px !important;
   bottom: -10px;
 }
 
