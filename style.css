@@ -580,6 +580,20 @@ font-size: 2rem;
 } 
 }
 
+@media only screen and (min-width: 601px) and (max-width: 776px){
+  .head{
+    width: 400% !important;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    zoom: 150%;
+  }
+  .head::after{
+    width: 400% !important;
+  }
+}
+
 @media only screen and (min-width: 1001px) and (max-width: 1200px){
   /*Tablets [601px -> 1200px]*/
 
@@ -680,6 +694,7 @@ nav{
   zoom: 250%;
   display: flex !important;
   position: relative !important;
+  bottom: -40px !important;
   left: -44px !important;
 }
 .about img{
@@ -730,7 +745,7 @@ nav{
 
 
 .head{
-  width: 350%;
+  width: 400% !important;
   text-align: center !important;
   display: flex;
   justify-content: center;
@@ -739,7 +754,7 @@ nav{
 }
 
 .head::after{
-  width: 350%;
+  width: 400% !important;
 }
 
 .head .title{
