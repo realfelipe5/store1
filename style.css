@@ -537,220 +537,160 @@ font-size: 2rem;
   color: #bbc4d8;
 }
 
- @media (max-width:1334px){
-     .head{
-         background-attachment: fixed;
-         background-size: cover;
-         background-repeat: no-repeat;
-    }
-     .about h1 {
-         text-align: center;
-         margin: 0 auto;
-    }
-     .about {
-         display: flex;
-         justify-content: center;
-         text-align: center;
-         width: 40%;
-         margin: 0 auto;
-    }
-     .about img {
-         display: none;
-    }
-     .faq {
-         padding-left: 230px;
-    }
+
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
 }
- @media(max-width: 1024px) {
-     .head{
-         padding: 0;
-         background: url(img/background.jpg);
-         width: 200%;
-    }
-    .head::after{
-      width: 200%;
+
+@media only screen and (max-width: 600px){
+/*Big smartphones [426px -> 600px]*/
+
+.about img{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+}
+
+
+
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+
+nav{
+  zoom: 200%;
+}
+
+
+.head{
+  width: 350%;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  zoom: 150%;
+}
+
+.head::after{
+  width: 350%;
+}
+
+.head .title{
+  zoom: 150%;
+}
+.head .link{
+  zoom: 120%;
+}
+
+/* .head-content{
+  zoom: 100% !important;
+} */
+
+.about{
+  zoom: 200%;
+  position: relative;
+  left: 250px;
+}
+
+.about img{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container-faq h2{
+font-size: 85px;
+position: relative;
+top: -180px;
+}
+
+
+.container-faq .accordion{
+  transform: scale(2.43);
+  width: 30%;
+  position: relative;
+  left: 400px;
+  bottom: -10px;
+}
+
+.container-contact {
+  width: 200%;
+  zoom: 150%;
+  position: relative;
+  left: 150px;
+}
+.contact-box {
+  grid-template-columns: 1fr;
+}
+.left {
+  height: 200px;
+}
+
+}
+
+
+  /* NAVBAR PHONES / VALID DEVICES */
+@media(max-width: 1000px) {
+  .burger {
+      display: block;
  }
-     footer {
-         display: none;
-    }
-     .head {
-         text-align: center;
-         display: flex;
-         justify-content: center;
-    }
-     .about img {
-         display: none;
-    }
+  .nav-links {
+      position: fixed;
+      z-index: 98;
+      right: 0;
+      flex-direction: column;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      background: rgb(42, 42, 43);
+      color: rgb(255, 255, 255);
+      height: 124vh;
+      top: 6%;
+      opacity: 1;
+      transform: translateX(100%);
+      transition: all 0.5s ease;
+ }
+  .nav-links.active {
+      transform: translateX(0);
+      opacity: 1;
+ }
+  .sch .line.active {
+      background: white;
+ }
+  .line.active {
+      background: white;
+ }
+  .nav-links li {
+      margin: 20px 0px;
+ }
+  .one.active {
+      transform: rotate(-45deg) translate(-50%, -50%);
+ }
+  .two.active {
+      display: none;
+ }
+  .three.active {
+      transform: rotate(45deg) translate(-5px, 6px);
+ }
+  .bottom {
+      display: none !important;
+ }
+  .sch .nav-links li a {
+      color: white !important;
+ }
+  .nav-links li a {
+      color: white !important;
+      font-size: 27px;
+ }
+
+footer{
+display: none;
+visibility: hidden;
+opacity: 0;
 }
- @media screen and (max-width: 880px) {
-     .contact-box {
-         grid-template-columns: 1fr;
-    }
-     .left {
-         height: 200px;
-    }
-}
-/* phone */
- @media(max-width: 1000px) {
-     .burger {
-         display: block;
-    }
-     .nav-links {
-         position: fixed;
-         z-index: 98;
-         right: 0;
-         flex-direction: column;
-         width: 100vw;
-         align-items: center;
-         justify-content: center;
-         background: rgb(42, 42, 43);
-         color: rgb(255, 255, 255);
-         height: 124vh;
-         top: 6%;
-         opacity: 1;
-         transform: translateX(100%);
-         transition: all 0.5s ease;
-    }
-     .nav-links.active {
-         transform: translateX(0);
-         opacity: 1;
-    }
-     .sch .line.active {
-         background: white;
-    }
-     .line.active {
-         background: white;
-    }
-     .nav-links li {
-         margin: 20px 0px;
-    }
-     .one.active {
-         transform: rotate(-45deg) translate(-50%, -50%);
-    }
-     .two.active {
-         display: none;
-    }
-     .three.active {
-         transform: rotate(45deg) translate(-5px, 6px);
-    }
-     .bottom {
-         display: none !important;
-    }
-     .sch .nav-links li a {
-         color: white !important;
-    }
-     .nav-links li a {
-         color: white !important;
-         font-size: 27px;
-    }
-
-
-      .head{
-        width: 300% !important;
-      }
-
-      .head::after{
-        width: 300% !important;
-      }
-
-    .about{
-      position: relative !important;
-      right: -500px !important;
-      zoom: 200%;
-    }
-
-    .container-faq{
-      zoom: 200%;
-    }
-
-    .container-contact{
-      position: relative;
-      right: -750px;
-      transform: scale(1.651);
-    }
-}
- @media (max-width:768px) {
-
-  .about{
-    zoom: 200%;
-    position: relative !important;
-    right: -340px !important;
-  }
-
-  .container-faq{
-    zoom: 200%;
-    position: relative !important;
-    right: -50px !important;
-  }
-     .grid {
-         grid-template-columns: 1fr;
-    }
-     footer {
-         display: none;
-    }
-     .about {
-         background: none;
-    }
 }
 
- @media(max-width: 600px) {
-     html, body {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         text-align: center;
-         min-height: 100vh;
-         margin: auto;
-         width: 100%;
-    }
-
-
-     footer {
-         display: none;
-         opacity: 0;
-         visibility: hidden;
-    }
-     .head .h1-title {
-         width: 90%;
-         display: flex;
-         justify-content: center;
-         text-align: center;
-         padding-left: 40px;
-    }
-
-     .about img {
-         display: none;
-         opacity: 0;
-         visibility: hidden;
-    }
-
-    .about{
-      position: relative;
-      left: 240px;
-    }
-
-    .about a{
-      zoom: 100%;
-      position: relative;
-      /* top: 10px; */
-      right: -20px;
-    }
-     .container-faq{
-         position: relative !important;
-         left: 90px !important;
-
-    }
-    .container-faq .accordion-item{
-      zoom: 250% !important;
-    }
-     .container-contact .contact-box{
-         position: relative !important;
-         left: -200px !important;
-         width: 500px !important;
-         transform: scale(0.9);
-         margin-top: 230px;
-    }
-}
 /* others*/
 .mar-small{
   margin: 20px;
