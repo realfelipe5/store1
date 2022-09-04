@@ -538,18 +538,186 @@ font-size: 2rem;
 }
 
 
+@media screen and (min-width: 1204px) and (max-width: 1287px) {
+/* header fix */
+.head{
+  width: 150%;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  zoom: 150%;
+}
+.head::after{
+  width: 150%;
+}
 
-@media only screen and (max-width: 1200px){
+.about{
+  zoom: 150%;
+  display: flex;
+  position: relative;
+  left: 150px;
+}
+
+.container-faq{
+  zoom: 150%;
+}
+
+.container-contact {
+  zoom: 110%;
+  position: relative;
+  left: 230px;
+}
+.contact-box {
+  grid-template-columns: 1fr;
+}
+.left {
+  height: 200px;
+}
+
+.footer{
+  position: relative;
+  width: 150%;
+} 
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px){
   /*Tablets [601px -> 1200px]*/
+
+  nav{
+    zoom: 204%;
+  }
+  .head{
+    width: 350%;
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    zoom: 150%;
+  }
+  .head::after{
+    width: 350%;
+  }
+
+
+  .about{
+    display: flex;
+    zoom: 230%;
+    position: relative;
+    left: 200px;
+  }
+
+  .container-faq h2{
+    font-size: 85px;
+    position: relative;
+    top: -260px;
+    left: 300px;
+    }
+  
+  .container-faq{
+    position: relative;
+    left: 600px;
+    bottom: -50px;
+  }
+  .container-faq .accordion{
+    transform: scale(2.75728);
+    width: 50%;
+    position: relative;
+    left: 600px;
+  }
+  .container-contact {
+    width: 200%;
+    zoom: 200%;
+    position: relative;
+    bottom: -200px;
+    left: 180px;
+    transform: scale(1);
+  }
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+
+  footer{
+    transform: scale(1.8);
+    zoom: 200%;
+    position: relative !important;
+    bottom: -500px;
+    left: 400px !important;
+    width: 200% !important;
+  }
 }
 
 @media only screen and (max-width: 600px){
 /*Big smartphones [426px -> 600px]*/
 
+nav{
+  zoom: 250%;
+}
+
+.head{
+  width: 350%;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  zoom: 150%;
+}
+.head .h1-title {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.head::after{
+  width: 350%;
+}
+
+.about{
+  zoom: 250%;
+  display: flex;
+  position: relative;
+  left: 56px;
+}
 .about img{
   display: none;
   visibility: hidden;
   opacity: 0;
+}
+
+.container-faq h2{
+  font-size: 85px;
+  position: relative;
+  top: -180px;
+  left: 300px;
+  zoom: 1.3;
+  }
+
+.container-faq .accordion{
+  transform: scale(2.85728);
+  width: 50%;
+  position: relative;
+  left: 650px;
+  bottom: -50px;
+}
+
+.container-contact {
+  width: 200%;
+  zoom: 200%;
+  position: relative;
+  bottom: -200px;
+  left: 180px;
+  transform: scale(1.4);
+}
+.contact-box {
+  grid-template-columns: 1fr;
+}
+.left {
+  height: 200px;
 }
 }
 
@@ -684,6 +852,58 @@ top: -180px;
       font-size: 27px;
  }
 
+ nav{
+  zoom: 204%;
+}
+.head{
+  width: 300%;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  zoom: 150%;
+}
+.head::after{
+  width: 300%;
+}
+
+
+.about{
+  display: flex;
+  zoom: 230%;
+}
+
+.container-faq h2{
+  font-size: 85px;
+  position: relative;
+  top: -180px;
+  left: 300px;
+  }
+
+.container-faq .accordion{
+  transform: scale(2.85728);
+  width: 50%;
+  position: relative;
+  left: 650px;
+  bottom: -50px;
+}
+
+.container-contact {
+  width: 200%;
+  zoom: 200%;
+  position: relative;
+  bottom: -200px;
+  left: 180px;
+  transform: scale(1);
+}
+.contact-box {
+  grid-template-columns: 1fr;
+}
+.left {
+  height: 200px;
+}
+
+/* Applies to all phones and devices below resolution */
 footer{
 display: none;
 visibility: hidden;
