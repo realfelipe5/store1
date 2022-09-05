@@ -698,7 +698,7 @@ nav{
   display: flex !important;
   position: relative !important;
   bottom: -40px !important;
-  left: -44px !important;
+  left: 44px !important;
 }
 .about img{
   display: none;
@@ -734,7 +734,7 @@ nav{
 }
 .left {
   height: 200px;
-  
+
 }
 }
 
