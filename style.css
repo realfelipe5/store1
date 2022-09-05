@@ -111,6 +111,15 @@
      z-index: 9999;
      transition: all 0.2s ease;
 }
+
+#shopping{
+  width: 28px;
+  cursor: pointer;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  transition: 0.3s all ease;
+}
 /* head */
  .head {
      background: url(img/background.jpg);
