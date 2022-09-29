@@ -102,6 +102,11 @@ nav{
  .sch .nav-links li a {
      color: black;
 }
+
+.sch .nav-links li:nth-child(6) a{
+  color: white;
+}
+
  .sch li a:hover {
      text-decoration: none;
 }
